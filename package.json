@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/joetidee/enzyme-react-intl"
   },
-  "main": "lib/index.js",
+  "main": "lib/enzyme-react-intl.js",
   "engines": {
     "node": ">=4.2.4"
   },
@@ -25,12 +25,7 @@
   ],
   "module": "lib/",
   "dependencies": {
-    "enzyme": "^2.7.1",
-    "jsonfile": "^2.4.0",
-    "react": "^15.4.1",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-intl": "^2.2.3"
+    "jsonfile": "^2.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
@@ -55,5 +50,11 @@
     "source-map-support": "^0.4.11",
     "webpack": "^2.2.1",
     "webpack-node-externals": "^1.5.4"
+  },
+  "peerDependencies": {
+    "enzyme": "^2.7.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.2",
+    "react-intl": "^2.2.3"
   }
 }
