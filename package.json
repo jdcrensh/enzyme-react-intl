@@ -1,5 +1,5 @@
 {
-  "name": "enzyme-react-intl",
+  "name": "@jdcrensh/enzyme-react-intl",
   "description": "A complimentary wrapper function for use with Enzyme, when testing React components that rely on react-intl.",
   "keywords": [
     "enzyme-react-intl,mountWithIntl,shallowWithIntl,enzyme,react-intl"
@@ -11,10 +11,10 @@
   },
   "license": "MIT",
   "version": "1.4.1",
-  "bugs": "https://github.com/joetidee/enzyme-react-intl/issues",
+  "bugs": "https://github.com/jdcrensh/enzyme-react-intl/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joetidee/enzyme-react-intl"
+    "url": "https://github.com/jdcrensh/enzyme-react-intl"
   },
   "main": "lib/enzyme-react-intl.js",
   "engines": {
@@ -24,9 +24,6 @@
     "lib/"
   ],
   "module": "lib/",
-  "dependencies": {
-    "jsonfile": "^2.4.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-loader": "^6.3.2",

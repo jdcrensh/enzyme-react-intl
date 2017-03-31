@@ -1,28 +1,8 @@
-'use strict';
-
 import React from 'react';
 import { IntlProvider, intlShape } from 'react-intl';
 import { mount, shallow } from 'enzyme';
-import jsonfile from 'jsonfile';
-var path = require('path');
 var locale = 'en';
-var intl = {};
 var messages = {};
-
-/**
- * Loads translation file.
- * @param {string} localeFilePath
- * @return {object} messages
- */
-function loadTranslation(localeFilePath) {
-    if(typeof localeFilePath == "undefined"){
-        messages = {};
-        return null;
-    }
-    let fp = path.join(__dirname, localeFilePath);
-    messages = jsonfile.readFileSync("." + fp);
-    return messages;
-}
 
 /**
  * Equivalent to enzyme's 'shallow' method.
@@ -49,19 +29,8 @@ function mountWithIntl (node, { context, childContextTypes } = {}) {
     });
 }
 
-function getLocale(){
-    return locale;
-}
-
-function setLocale(str){
-    locale = str;
-}
-
 var enzymeReactIntl = {
-    loadTranslation: loadTranslation,
     shallowWithIntl: shallowWithIntl,
     mountWithIntl: mountWithIntl,
-    setLocale: setLocale,
-    getLocale: getLocale
 };
 module.exports = enzymeReactIntl;
